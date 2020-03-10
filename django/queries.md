@@ -13,3 +13,10 @@ class Game(models.Model):
 Game.objects.aggregate(Avg('wins'))
 
 ```
+
+
+# Check if a related object exists
+## Sanity check for `RelatedObjectDoesNotExist` error
+```python
+hasattr(model, 'related_object'):
+```
